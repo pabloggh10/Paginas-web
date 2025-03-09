@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mascota - Eliminar</title>
+</head>
+<style>
+    table{
+        width: 50%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+    th{
+        background-color: #f2f2f2;
+    }
+    caption{
+        font-size: 1.5em;
+        margin: 10px 0;
+    }
+</style>
+<body>
+<a href="/Mascotas">Inicio - Home</a>
+<h2>Actualizar mascota</h2>
+<form method="post" action="/Mascotas/eliminar">
+    <table>
+        <thead>
+        <tr>
+            <th>Campo</th>
+            <th>Dato</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Nombre</td>
+            <td><input type="text" name="Nombre - Mascota" id="Nombre-Mascota" value="Max"></td>
+        </tr>
+        <tr>
+            <td>Raza</td>
+            <td>
+                <select name="Raza" id="Raza-Mascota">
+                    <option value="1">Gran Perro</option>
+                    <option value="2">Chihuahua</option>
+                    <option value="3" selected>Husky</option>
+                    <option value="4">Pug</option>
+                    <option value="5">Pastor Aleman</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Edad</td>
+            <td><input type="number" name="Edad - Mascota" id="Edad-Mascota" value="3"></td>
+        </tr>
+        <tr>
+            <td>Observaciones</td>
+            <td>
+                <textarea name="Observaciones" id="Observaciones">Max es un perro muy docil. Le gusta traer la pelota.</textarea>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <input type="submit" value="Eliminar">
+</form>
+</body>
+</html>
